@@ -1,48 +1,164 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Emily Petracco</title>
+    <link rel="stylesheet" href="./style.css">
     <script src="https://kit.fontawesome.com/adb5bbd60b.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.11.0/devicon.min.css">
-
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond&family=Pacifico&display=swap"
+        rel="stylesheet">
 </head>
+
 <body>
     <header>
-        <h1>Hi there, I'm Emily.</h1>
-        <h2>I'm a front-end web developer.</h2>
-        <i class="fas fa-chevron-down"></i>
+        <div class="wrapper headerText">
+            <h1>Hi there, I'm Emily.</h1>
+            <h2>I'm a <span class="animation"></span>.</h2>
+        </div>
+        <span class="chevron">
+            <a href="#about"><i class="fas fa-chevron-down"></i></a>
+        </span>
     </header>
 
     <main>
-        <section class="about">
-            <h3>About Me</h3>
-            <p>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reprehenderit illum culpa reiciendis, animi minima necessitatibus iure, tempore aut esse voluptatum incidunt quisquam officia cumque cum. Voluptas, laboriosam. Laboriosam, veniam provident cupiditate veritatis mollitia iste est perspiciatis accusantium ipsum culpa voluptatem aperiam error fugit fugiat suscipit inventore voluptatibus omnis repellat. Tenetur.
-            </p>
+        <section class="about" id="about">
+            <div class="aboutPhotoContainer wrapper">
+                <h3>About Me</h3>
+                <img src="https://placekitten.com/400/500" alt="">
+            </div>
+            <div class="aboutTextContent wrapper">
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi asperiores accusamus, consequatur
+                    iure est porro magni facere rerum aliquid ipsam quod veritatis quia temporibus ducimus laudantium in
+                    autem. Corrupti praesentium nobis minus sit? Necessitatibus culpa quae minima! Eius, expedita ab
+                    similique, laborum quas iusto aliquam placeat hic tempore voluptatem iure magni nihil veritatis
+                    aliquid eos tempora doloremque fugit. Reprehenderit, vel.
+                </p>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla ratione accusantium quis fugiat
+                    mollitia. Vel, dicta expedita. Natus eius sequi exercitationem blanditiis impedit quidem eaque,
+                    molestias autem pariatur veniam maiores commodi tempore ullam iste officiis reprehenderit vero quasi
+                    dignissimos beatae.
+                </p>
+                <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquid beatae voluptate consequatur
+                    quibusdam nulla ea incidunt doloremque harum alias optio ex porro dicta maiores, cupiditate
+                    doloribus iusto quo natus laborum.
+                </p>
+            </div>
         </section>
         <section class="skills">
             <h3>Skills and Tools</h3>
-            <ul>
-                <li><i class="devicon-html5-plain"></i></li>
-                <li><i class="devicon-css3-plain"></i></li>
-                <li><i class="devicon-sass-original"></i></li>
-                <li><i class="devicon-javascript-plain"></i></li>
-                <li><i class="devicon-jquery-plain"></i></li>
-                <li><i class="devicon-github-original"></i></li>
-                <li><i class="devicon-react-original"></i></li>
-                <li><i class="devicon-firebase-plain"></i></li>
-                <li><i class="fas fa-mobile-alt"></i></li>
-                <li><i class="fas fa-universal-access"></i></li>
+            <ul class="skillIcons">
+                <li><i class="devicon-html5-plain"></i>
+                    <p>HTML 5</p>
+                </li>
+                <li><i class="devicon-css3-plain"></i>
+                    <p>CSS 3</p>
+                </li>
+                <li><i class="devicon-sass-original"></i>
+                    <p>Sass</p>
+                </li>
+                <li><i class="devicon-javascript-plain"></i>
+                    <p>JavaScript</p>
+                </li>
+                <li><i class="devicon-jquery-plain"></i>
+                    <p>jQuery</p>
+                </li>
+                <li><i class="devicon-github-original"></i>
+                    <p>GitHub</p>
+                </li>
+                <li><i class="devicon-react-original"></i>
+                    <p>React</p>
+                </li>
+                <li><i class="devicon-firebase-plain"></i>
+                    <p>Firebase</p>
+                </li>
+                <li><i class="fas fa-mobile-alt"></i>
+                    <p>Responsive Design</p>
+                </li>
+                <li><i class="fas fa-universal-access"></i>
+                    <p>Accessibility</p>
+                </li>
             </ul>
         </section>
         <section class="projects">
             <h3>Projects</h3>
+            <div class="projectsContainer">
+                <img src="https://placekitten.com/500/300" alt="">
+                <div class="projectTextContainer">
+                    <h4>Website Title</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga quod labore laudantium
+                        necessitatibus quaerat doloribus explicabo. Alias quas delectus ipsam aspernatur. Nostrum
+                        possimus sunt aliquam nihil ex voluptas dolorum? Ab?</p>
+                    <a href="">View Live</a>
+                    <a href="">View GitHub</a>
+                </div>
+            </div>
+            <div class="projectsContainer">
+                <img src="https://placekitten.com/500/300" alt="">
+                <div class="projectTextContainer">
+                    <h4>Website Title</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga quod labore laudantium
+                        necessitatibus quaerat doloribus explicabo. Alias quas delectus ipsam aspernatur. Nostrum
+                        possimus sunt aliquam nihil ex voluptas dolorum? Ab?</p>
+                    <a href="">View Live</a>
+                    <a href="">View GitHub</a>
+                </div>
+            </div>
+            <div class="projectsContainer">
+                <img src="https://placekitten.com/500/300" alt="">
+                <div class="projectTextContainer">
+                    <h4>Website Title</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga quod labore laudantium
+                        necessitatibus quaerat doloribus explicabo. Alias quas delectus ipsam aspernatur. Nostrum
+                        possimus sunt aliquam nihil ex voluptas dolorum? Ab?</p>
+                    <a href="">View Live</a>
+                    <a href="">View GitHub</a>
+                </div>
+            </div>
+            <div class="projectsContainer">
+                <img src="https://placekitten.com/500/300" alt="">
+                <div class="projectTextContainer">
+                    <h4>Website Title</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga quod labore laudantium
+                        necessitatibus quaerat doloribus explicabo. Alias quas delectus ipsam aspernatur. Nostrum
+                        possimus sunt aliquam nihil ex voluptas dolorum? Ab?</p>
+                    <a href="">View Live</a>
+                    <a href="">View GitHub</a>
+                </div>
+            </div>
         </section>
         <section class="contact">
-            <h3>Contact Me</h3>
+            <h3>Lets Talk!</h3>
+            <form>
+                <fieldset>
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" placeholder="Name">
+                    <label for="email">Email</label><br>
+                    <input type="email" id="email" name="email" placeholder="Email">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" placeholder="Let's chat!"></textarea>
+                    <button type="submit">Send!</button>
+                </fieldset>
+            </form>
+            <div>
+                <p>Feel free to send me a message using my little contact form! Or, contact me directly at the email
+                    below!</p>
+                <a id="email" href="mailto:emilypetracco@hotmail.com">emilypetracco@hotmail.com</a>
+                <ul>
+                    <!-- ADD LINKSSSSSSSSSSS -->
+                    <li><a href="https://github.com/emilypetracco"><i class="devicon-github-original"></i></a></li>
+                    <li><a href=""><i class="devicon-linkedin-plain"></i></a></li>
+                    <li><a href=""><i class="devicon-twitter-original"></i></a></li>
+                </ul>
+            </div>
+
         </section>
     </main>
 
@@ -50,4 +166,5 @@
         Created with love by Emily Petracco
     </footer>
 </body>
+
 </html>
