@@ -11,12 +11,13 @@ html { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: 
 html {
     font-size: 62.5%;
     font-family: 'Cormorant Garamond', serif;
+    line-height: 1.6;
 }
 
 .wrapper {
     margin: 0 auto;
     max-width: 1280px;
-    width: 100%;
+    width: 80%;
 }
 
 a {
@@ -30,7 +31,6 @@ li {
 
 header {
     height: 100vh;
-    background-color: #ffdae9;
 }
 
 .headerText {
@@ -38,11 +38,12 @@ header {
     flex-direction: column;
     align-items: center;
     position: relative;
-    top: 25rem;
+    top: 15rem;
 }
 
 h1,
-h3 {
+h3,
+h4 {
     font-family: 'Pacifico', cursive;
 }
 
@@ -59,13 +60,33 @@ h2 {
 }
 
 .animation {
-    background-color: #b4da555d;
+    background-color: #e4f2c1;
     height: 6%;
 }
 
 .animation::before {
     content: '';
     animation: animate infinite 10s;
+}
+
+.scallop {
+    position:relative;
+    background: #ffdae9;
+    padding:5rem;
+}
+
+.scallop::after { 
+    position: absolute;
+    bottom: -50px;
+    left: 0px;
+    width: 100%;
+    content:" ";
+    background: 
+    radial-gradient(circle at 50% 0%, #ffdae9 25%, #FFFFFF 26%, #FFFFFF 40%);
+    background-color: #ffdae9;
+    background-size: 50px 100px;
+    height:50px;
+    background-repeat: repeat-x;
 }
 
 @keyframes animate {
@@ -99,44 +120,125 @@ h2 {
     bottom: 0;
     font-size: 4rem;
     color: #FFF;
-    padding: 2rem;
+    padding-bottom: 2rem;
+    margin: 0;
 }
 
 .fa-chevron-down:hover {
     font-size: 5rem;
-    color: #b4da555d;
+    color: #e4f2c1;
 }
 
 .about {
     display: flex;
+    padding-top: 10rem;
 }
 
 h3 {
     font-size: 4rem;
+    color: #FFF;
+    text-shadow: -1px -1px 1px #000, 1px 1px 1px #000;
 }
 
 .aboutPhotoContainer {
     width: 40%;
-    background-color: #b4da555d;
-    margin: 0;
+    margin-left: 0;
+    margin-top: 0px;
+}
+
+.aboutPhotoContainer h3 {
+    margin-top: 0px;
+}
+
+.aboutPhotoContainer img {
+    width: 75%;
+    box-shadow: -1.5rem -1.5rem #e4f2c1;
 }
 
 .aboutTextContent {
-    width: 50%;
-    margin-left: 10rem;
+    width: 60%;
+    font-size: 2rem;
+    margin-top: 5rem;
+}
+
+.aboutTextContent p {
+    margin-left: 5rem;
+    padding-top: 2rem;
+}
+
+.aboutTextContent span {
+    background-color: #e4f2c1;
+}
+
+.skills {
+    text-align: center;
+    color: #ffdae9;
+    margin-top: 8rem;
 }
 
 .skillIcons {
+    width: 70%;
+    font-size: 6rem;
+    color: #000000;
     display: flex;
-    font-size: 4rem;
+    justify-content: space-evenly;
+    margin: 0 auto;
 }
 
-.skills h3 {
-    text-align: center;
+.skillIcons li {
+    padding: 2rem;
+}
+
+.skillIcons li:hover {
+    color: #ffdae9;
+}
+
+li p {
+    font-size: 2rem;
+}
+
+.projectsContainer {
+    display: flex;
+    padding-top: 5rem;
+}
+
+.projectImage {
+    width: 50%;
+    box-shadow: -1.5rem -1.5rem #e4f2c1;
+}
+
+.projectTextContainer {
+    width: 50%;
+    margin-left: 8rem;
+}
+
+h4 {
+    font-size: 3rem;
+    margin: 1rem;
+}
+
+.projectTextContainer p {
+    font-size: 2rem;
+}
+
+.projectTextContainer span {
+    background-color: #ffdae9;
+}
+
+.projectLinks {
+    background-color: #e4f2c1;
+    font-size: 2rem;
+    padding: 1rem 2rem;
+    margin-right: 2rem;
+    border-radius: 10px;
+}
+
+.projectLinks:hover {
+    background-color: #ffdae9;
 }
 
 footer {
-    background-color: #b4da555d;
+    background-color: #e4f2c1;
     font-size: 3rem;
     text-align: center;
     padding: 10px;

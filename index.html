@@ -15,7 +15,7 @@
 </head>
 
 <body>
-    <header>
+    <header class="scallop">
         <div class="wrapper headerText">
             <h1>Hi there, I'm Emily.</h1>
             <h2>I'm a <span class="animation"></span>.</h2>
@@ -26,111 +26,114 @@
     </header>
 
     <main>
-        <section class="about" id="about">
-            <div class="aboutPhotoContainer wrapper">
+        <section class="about wrapper" id="about">
+            <div class="aboutPhotoContainer">
                 <h3>About Me</h3>
                 <img src="https://placekitten.com/400/500" alt="">
             </div>
-            <div class="aboutTextContent wrapper">
+            <div class="aboutTextContent">
                 <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi asperiores accusamus, consequatur
-                    iure est porro magni facere rerum aliquid ipsam quod veritatis quia temporibus ducimus laudantium in
-                    autem. Corrupti praesentium nobis minus sit? Necessitatibus culpa quae minima! Eius, expedita ab
-                    similique, laborum quas iusto aliquam placeat hic tempore voluptatem iure magni nihil veritatis
-                    aliquid eos tempora doloremque fugit. Reprehenderit, vel.
+                    Hi there! I'm a front-end web developer, having just graduated from Juno College's web development
+                    bootcamp. I really enjoy <span>working with others</span> and being apart of a team and with plenty
+                    of years of customer service experience I have <span>excellent communication</span> skills and I'm
+                    happy to build positive relationships with coworkers and clients alike.
                 </p>
                 <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla ratione accusantium quis fugiat
-                    mollitia. Vel, dicta expedita. Natus eius sequi exercitationem blanditiis impedit quidem eaque,
-                    molestias autem pariatur veniam maiores commodi tempore ullam iste officiis reprehenderit vero quasi
-                    dignissimos beatae.
+                    I come from a <span>very creative background</span>, working previously as a floral designer and
+                    having gone to school for cake decorating and baking. I love anything where I can show off my
+                    creativity and <span>sense of design</span>.
                 </p>
                 <p>
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquid beatae voluptate consequatur
-                    quibusdam nulla ea incidunt doloremque harum alias optio ex porro dicta maiores, cupiditate
-                    doloribus iusto quo natus laborum.
+                    Along with coding I love spending time in the kitchen cooking and baking, working on various
+                    crafting projects and watching reruns of early 2000s reality tv.
                 </p>
             </div>
         </section>
         <section class="skills">
-            <h3>Skills and Tools</h3>
+            <h3 class="skills">Skills and Tools</h3>
             <ul class="skillIcons">
-                <li><i class="devicon-html5-plain"></i>
-                    <p>HTML 5</p>
+                <li>
+                    <i class="devicon-html5-plain"></i>
+                    <p>HTML5</p>
                 </li>
-                <li><i class="devicon-css3-plain"></i>
-                    <p>CSS 3</p>
+                <li>
+                    <i class="devicon-css3-plain"></i>
+                    <p>CSS3</p>
                 </li>
-                <li><i class="devicon-sass-original"></i>
+                <li>
+                    <i class="devicon-sass-original"></i>
                     <p>Sass</p>
                 </li>
-                <li><i class="devicon-javascript-plain"></i>
+                <li>
+                    <i class="devicon-javascript-plain"></i>
                     <p>JavaScript</p>
                 </li>
-                <li><i class="devicon-jquery-plain"></i>
+                <li>
+                    <i class="devicon-jquery-plain"></i>
                     <p>jQuery</p>
                 </li>
-                <li><i class="devicon-github-original"></i>
+                <li>
+                    <i class="devicon-github-original"></i>
                     <p>GitHub</p>
                 </li>
-                <li><i class="devicon-react-original"></i>
+                <li>
+                    <i class="devicon-git-plain"></i>
+                    <p>Git</p>
+                </li>
+                <li>
+                    <i class="devicon-react-original"></i>
                     <p>React</p>
                 </li>
-                <li><i class="devicon-firebase-plain"></i>
-                    <p>Firebase</p>
+                <li>
+                    <i class="devicon-firebase-plain"></i>
+                    <p class="hidden">Firebase</p>
                 </li>
-                <li><i class="fas fa-mobile-alt"></i>
+                <li>
+                    <i class="fas fa-mobile-alt"></i>
                     <p>Responsive Design</p>
                 </li>
-                <li><i class="fas fa-universal-access"></i>
+                <li>
+                    <i class="fas fa-universal-access"></i>
                     <p>Accessibility</p>
                 </li>
             </ul>
         </section>
-        <section class="projects">
+        <section class="projects wrapper">
             <h3>Projects</h3>
             <div class="projectsContainer">
-                <img src="https://placekitten.com/500/300" alt="">
+                <img class="projectImage" src="./assets/image2.png" alt="">
                 <div class="projectTextContainer">
-                    <h4>Website Title</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga quod labore laudantium
-                        necessitatibus quaerat doloribus explicabo. Alias quas delectus ipsam aspernatur. Nostrum
-                        possimus sunt aliquam nihil ex voluptas dolorum? Ab?</p>
-                    <a href="">View Live</a>
-                    <a href="">View GitHub</a>
+                    <h4>No So Trivial Pursuit</h4>
+                    <p>A <span>React-based</span> trivia app that utilises the <a href="https://opentdb.com/" target="_blank">Open Trivia Database <span>API</span></a> and <span>Firebase</span>. Users can select a category, number of questions and the difficulty of the questions and take a trivia quiz. Unfinished quizzes are saved and can be resumed at a later date. This project was built with Nicole Wu, Spencer Thompson and Seunggi Lee.</p>
+                    <a class="projectLinks" href="https://nifty-goodall-444b58.netlify.app/" target="_blank">View Live</a>
+                    <a class="projectLinks" href="https://github.com/LochNessTriviaProject/notSoTrivialPursuit" target="_blank">View GitHub</a>
                 </div>
             </div>
             <div class="projectsContainer">
-                <img src="https://placekitten.com/500/300" alt="">
+                <img class="projectImage" src="./assets/image1.png" alt="">
                 <div class="projectTextContainer">
-                    <h4>Website Title</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga quod labore laudantium
-                        necessitatibus quaerat doloribus explicabo. Alias quas delectus ipsam aspernatur. Nostrum
-                        possimus sunt aliquam nihil ex voluptas dolorum? Ab?</p>
-                    <a href="">View Live</a>
-                    <a href="">View GitHub</a>
+                    <h4>Cocktail Companion</h4>
+                    <p>A <span>React-based</span> app that helps users find the perfect drink, data is gathered using the <a href="https://www.thecocktaildb.com/" target="_blank">Cocktail Database <span>API</span></a>. Users can decide if they wish to randomly generate cocktails or shots at the click of a button. Upon each click, a randomised drink will appear, complete with an image, ingredients list and instructions on how to make it yourself.</p>
+                    <a class="projectLinks" href="https://emilypetracco.github.io/cocktailCompanion/" target="_blank">View Live</a>
+                    <a class="projectLinks" href="https://github.com/emilypetracco/cocktailCompanion" target="_blank">View GitHub</a>
                 </div>
             </div>
             <div class="projectsContainer">
-                <img src="https://placekitten.com/500/300" alt="">
+                <img class="projectImage" src="./assets/image3.png" alt="">
                 <div class="projectTextContainer">
-                    <h4>Website Title</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga quod labore laudantium
-                        necessitatibus quaerat doloribus explicabo. Alias quas delectus ipsam aspernatur. Nostrum
-                        possimus sunt aliquam nihil ex voluptas dolorum? Ab?</p>
-                    <a href="">View Live</a>
-                    <a href="">View GitHub</a>
+                    <h4>Makeup Your Mind</h4>
+                    <p>A <span>jQuery</span> app that helps users find new and exciting makeup products. Users can select what type of product they're looking for and filter out products with specific requirements. The products are printed to the page with the product name and brand, an image and a link to buy the item. Data is gathered using the <a href="https://makeup-api.herokuapp.com/" target="_blank">Makeup <span>API</span></a>. This project was built using <span>pair-programming</span> with <a href="https://oliviaheulitt.com/" target="_blank">Olivia Heulitt</a>.</p>
+                    <a class="projectLinks" href="https://emily-and-olivia.github.io/makeupYourMind/" target="_blank">View Live</a>
+                    <a class="projectLinks" href="https://github.com/Emily-and-Olivia/makeupYourMind" target="_blank">View GitHub</a>
                 </div>
             </div>
             <div class="projectsContainer">
-                <img src="https://placekitten.com/500/300" alt="">
+                <img class="projectImage" src="./assets/image4.png" alt="">
                 <div class="projectTextContainer">
-                    <h4>Website Title</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga quod labore laudantium
-                        necessitatibus quaerat doloribus explicabo. Alias quas delectus ipsam aspernatur. Nostrum
-                        possimus sunt aliquam nihil ex voluptas dolorum? Ab?</p>
-                    <a href="">View Live</a>
-                    <a href="">View GitHub</a>
+                    <h4>Planted</h4>
+                    <p>A <span>pixel-perfect</span>, multi-page PSD conversion. This webpage is <span>responsive</span> across all devices.</p>
+                    <a class="projectLinks" href="https://emilypetracco.github.io/emily-petracco-project-one/index.html" target="_blank">View Live</a>
+                    <a class="projectLinks" href="https://github.com/emilypetracco/emily-petracco-project-one" target="_blank">View GitHub</a>
                 </div>
             </div>
         </section>
