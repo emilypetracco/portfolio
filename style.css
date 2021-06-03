@@ -508,9 +508,6 @@ footer {
     .projectTextContainer p {
         padding-right: 2px;
     }
-    .scallopTop::after {
-        display: none;
-    }
 }
 
 @media (max-width: 375px) {
