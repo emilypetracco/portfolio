@@ -15,10 +15,11 @@
 </head>
 
 <body>
-    <header class="scallop">
+    <header class="scallopBottom">
         <div class="wrapper headerText">
             <h1>Hi there, I'm Emily.</h1>
             <h2>I'm a <span class="animation"></span>.</h2>
+            <h2 class="hiddenH2">I'm a <span>front-end web developer</span>.</h2>
         </div>
         <span class="chevron">
             <a href="#about"><i class="fas fa-chevron-down"></i></a>
@@ -47,11 +48,13 @@
                     Along with coding I love spending time in the kitchen cooking and baking, working on various
                     crafting projects and watching reruns of early 2000s reality tv.
                 </p>
+                <p><a class="resume" href="./assets/emilyPetraccoResumeJune2021.pdf" target="_blank">View my resume</a>
+                </p>
             </div>
         </section>
         <section class="skills">
             <h3 class="skills">Skills and Tools</h3>
-            <ul class="skillIcons">
+            <ul class="skillIcons scallopBottom">
                 <li>
                     <i class="devicon-html5-plain"></i>
                     <p>HTML5</p>
@@ -101,72 +104,82 @@
         <section class="projects wrapper">
             <h3>Projects</h3>
             <div class="projectsContainer">
-                <img class="projectImage" src="./assets/image2.png" alt="">
+                <img class="projectImage" src="./assets/image1.png" alt="">
                 <div class="projectTextContainer">
                     <h4>No So Trivial Pursuit</h4>
-                    <p>A <span>React-based</span> trivia app that utilises the <a href="https://opentdb.com/" target="_blank">Open Trivia Database <span>API</span></a> and <span>Firebase</span>. Users can select a category, number of questions and the difficulty of the questions and take a trivia quiz. Unfinished quizzes are saved and can be resumed at a later date. This project was built with Nicole Wu, Spencer Thompson and Seunggi Lee.</p>
-                    <a class="projectLinks" href="https://nifty-goodall-444b58.netlify.app/" target="_blank">View Live</a>
-                    <a class="projectLinks" href="https://github.com/LochNessTriviaProject/notSoTrivialPursuit" target="_blank">View GitHub</a>
+                    <p>A <span>React-based</span> trivia app that utilises the <a href="https://opentdb.com/"
+                            target="_blank">Open Trivia Database <span>API</span></a> and <span>Firebase</span>. Users
+                        can select a category, number of questions and the difficulty of the questions and take a trivia
+                        quiz. Unfinished quizzes are saved and can be resumed at a later date. This project was built
+                        with Nicole Wu, Spencer Thompson and Seunggi Lee.</p>
+                    <a class="projectLinks" href="https://nifty-goodall-444b58.netlify.app/" target="_blank">View
+                        Live</a>
+                    <a class="projectLinks" href="https://github.com/LochNessTriviaProject/notSoTrivialPursuit"
+                        target="_blank">View GitHub</a>
                 </div>
             </div>
             <div class="projectsContainer">
-                <img class="projectImage" src="./assets/image1.png" alt="">
+                <img class="projectImage" src="./assets/image2.png" alt="">
                 <div class="projectTextContainer">
                     <h4>Cocktail Companion</h4>
-                    <p>A <span>React-based</span> app that helps users find the perfect drink, data is gathered using the <a href="https://www.thecocktaildb.com/" target="_blank">Cocktail Database <span>API</span></a>. Users can decide if they wish to randomly generate cocktails or shots at the click of a button. Upon each click, a randomised drink will appear, complete with an image, ingredients list and instructions on how to make it yourself.</p>
-                    <a class="projectLinks" href="https://emilypetracco.github.io/cocktailCompanion/" target="_blank">View Live</a>
-                    <a class="projectLinks" href="https://github.com/emilypetracco/cocktailCompanion" target="_blank">View GitHub</a>
+                    <p>A <span>React-based</span> app that helps users find the perfect drink, data is gathered using
+                        the <a href="https://www.thecocktaildb.com/" target="_blank">Cocktail Database
+                            <span>API</span></a>. Users can decide if they wish to randomly generate cocktails or shots
+                        at the click of a button. Upon each click, a randomised drink will appear, complete with an
+                        image, ingredients list and instructions on how to make it yourself.</p>
+                    <a class="projectLinks" href="https://emilypetracco.github.io/cocktailCompanion/"
+                        target="_blank">View Live</a>
+                    <a class="projectLinks" href="https://github.com/emilypetracco/cocktailCompanion"
+                        target="_blank">View GitHub</a>
                 </div>
             </div>
             <div class="projectsContainer">
                 <img class="projectImage" src="./assets/image3.png" alt="">
                 <div class="projectTextContainer">
                     <h4>Makeup Your Mind</h4>
-                    <p>A <span>jQuery</span> app that helps users find new and exciting makeup products. Users can select what type of product they're looking for and filter out products with specific requirements. The products are printed to the page with the product name and brand, an image and a link to buy the item. Data is gathered using the <a href="https://makeup-api.herokuapp.com/" target="_blank">Makeup <span>API</span></a>. This project was built using <span>pair-programming</span> with <a href="https://oliviaheulitt.com/" target="_blank">Olivia Heulitt</a>.</p>
-                    <a class="projectLinks" href="https://emily-and-olivia.github.io/makeupYourMind/" target="_blank">View Live</a>
-                    <a class="projectLinks" href="https://github.com/Emily-and-Olivia/makeupYourMind" target="_blank">View GitHub</a>
+                    <p>A <span>jQuery</span> app that helps users find new and exciting makeup products. Users can
+                        select what type of product they're looking for and filter out products with specific
+                        requirements. The products are printed to the page with the product name and brand, an image and
+                        a link to buy the item. Data is gathered using the <a href="https://makeup-api.herokuapp.com/"
+                            target="_blank">Makeup <span>API</span></a>. This project was built using
+                        <span>pair-programming</span> with <a href="https://oliviaheulitt.com/" target="_blank">Olivia
+                            Heulitt</a>.</p>
+                    <a class="projectLinks" href="https://emily-and-olivia.github.io/makeupYourMind/"
+                        target="_blank">View Live</a>
+                    <a class="projectLinks" href="https://github.com/Emily-and-Olivia/makeupYourMind"
+                        target="_blank">View GitHub</a>
                 </div>
             </div>
             <div class="projectsContainer">
                 <img class="projectImage" src="./assets/image4.png" alt="">
                 <div class="projectTextContainer">
                     <h4>Planted</h4>
-                    <p>A <span>pixel-perfect</span>, multi-page PSD conversion. This webpage is <span>responsive</span> across all devices.</p>
-                    <a class="projectLinks" href="https://emilypetracco.github.io/emily-petracco-project-one/index.html" target="_blank">View Live</a>
-                    <a class="projectLinks" href="https://github.com/emilypetracco/emily-petracco-project-one" target="_blank">View GitHub</a>
+                    <p>A <span>pixel-perfect</span>, multi-page PSD conversion. This webpage is fully
+                        <span>responsive</span> across all devices.</p>
+                    <a class="projectLinks" href="https://emilypetracco.github.io/emily-petracco-project-one/index.html"
+                        target="_blank">View Live</a>
+                    <a class="projectLinks" href="https://github.com/emilypetracco/emily-petracco-project-one"
+                        target="_blank">View GitHub</a>
                 </div>
             </div>
-        </section>
-        <section class="contact">
-            <h3>Lets Talk!</h3>
-            <form>
-                <fieldset>
-                    <label for="name">Name</label>
-                    <input type="text" id="name" name="name" placeholder="Name">
-                    <label for="email">Email</label><br>
-                    <input type="email" id="email" name="email" placeholder="Email">
-                    <label for="message">Message</label>
-                    <textarea id="message" name="message" placeholder="Let's chat!"></textarea>
-                    <button type="submit">Send!</button>
-                </fieldset>
-            </form>
-            <div>
-                <p>Feel free to send me a message using my little contact form! Or, contact me directly at the email
-                    below!</p>
-                <a id="email" href="mailto:emilypetracco@hotmail.com">emilypetracco@hotmail.com</a>
-                <ul>
-                    <!-- ADD LINKSSSSSSSSSSS -->
-                    <li><a href="https://github.com/emilypetracco"><i class="devicon-github-original"></i></a></li>
-                    <li><a href=""><i class="devicon-linkedin-plain"></i></a></li>
-                    <li><a href=""><i class="devicon-twitter-original"></i></a></li>
-                </ul>
-            </div>
-
         </section>
     </main>
 
     <footer>
-        Created with love by Emily Petracco
+        <div class="contact wrapper scallopTop">
+            <h3>Lets Chat!</h3>
+            <p>I'd love to talk with you! Feel free to contact me directly at the email found below!</p>
+            <a class="email" id="email" href="mailto:emilypetracco@hotmail.com">emilypetracco@hotmail.com</a>
+            <nav>
+                <ul class="contactLinks">
+                    <!-- ADD LINKSSSSSSSSSSS -->
+                    <li><a href="https://github.com/emilypetracco"><i class="devicon-github-original"></i></a></li>
+                    <li><a href="https://www.linkedin.com/in/emily-petracco-32ba7520a/"><i class="devicon-linkedin-plain"></i></a></li>
+                    <li><a href="https://twitter.com/emilypetrax"><i class="devicon-twitter-original"></i></a></li>
+                </ul>
+            </nav>
+            <p class="footerNote"><i class="far fa-heart"></i> Made with Love by Emily Petracco</p>
+        </div>
     </footer>
 </body>
 
