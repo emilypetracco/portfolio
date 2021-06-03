@@ -498,6 +498,36 @@ footer {
     }
 }
 
+@media (max-width: 451px) {
+    .headerText {
+        top: 8rem;
+    }
+    h4 {
+        margin-left: -5rem;
+    }
+    .projectTextContainer p {
+        padding-right: 2px;
+    }
+    .scallopTop {
+        display: none;
+    }
+}
+
+@media (max-width: 375px) {
+    .headerText {
+        top: 14rem;
+    }
+    h1 {
+        font-size: 4.5rem;
+    }
+    h2 {
+        font-size: 2rem;
+    }
+    .projectTextContainer p {
+        margin-right: 3rem;
+    }
+}
+
 
 
 
