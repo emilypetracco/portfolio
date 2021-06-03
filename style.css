@@ -508,7 +508,7 @@ footer {
     .projectTextContainer p {
         padding-right: 2px;
     }
-    .scallopTop {
+    .scallopTop::after {
         display: none;
     }
 }
