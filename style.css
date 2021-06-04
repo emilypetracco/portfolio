@@ -364,6 +364,13 @@ footer {
 }
 
 @media (max-width: 1082px) {
+    .chevron {
+        display: none;
+    }   
+    .topNav li {
+        padding: 2rem;
+        font-size: 2.5rem;
+    }
     h1 {
         font-size: 8rem;
     }
@@ -533,7 +540,7 @@ footer {
 
 @media (max-width: 375px) {
     .headerText {
-        top: 20rem;
+        top: 15rem;
     }
     h1 {
         font-size: 4.5rem;
