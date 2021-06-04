@@ -157,7 +157,8 @@ li span {
     margin: 0;
 }
 
-.fa-chevron-down:hover {
+.fa-chevron-down:hover,
+.fa-chevron-down:focus {
     font-size: 5rem;
     color: #e4f2c1;
 }
@@ -281,7 +282,9 @@ h4 {
 }
 
 .projectLinks:hover,
-.resume:hover {
+.resume:hover,
+.projectLinks:focus,
+.resume:focus {
     background-color: #ffdae9;
 }
 
@@ -335,7 +338,8 @@ footer {
     margin-left: 3rem;
 }
 
-.email:hover {
+.email:hover,
+.email:focus {
     background-color: #e4f2c1;
 }
 
@@ -350,7 +354,8 @@ footer {
     padding-right: 1.5rem;
 }
 
-.contactLinks a:hover {
+.contactLinks a:hover,
+.contactLinks a:focus {
     color: #e4f2c1; 
 }
 
@@ -471,6 +476,9 @@ footer {
     h2 {
         font-size: 2.5rem;
     }
+    .fa-chevron-down {
+        bottom: 40px;
+    }
     .skillIcons {
         font-size: 4rem;
     }
@@ -485,9 +493,6 @@ footer {
     }
     h2 {
         font-size: 2rem;
-    }
-    .fa-chevron-down {
-        bottom: 3rem;
     }
     .skillIcons {
         font-size: 3rem;
@@ -513,15 +518,16 @@ footer {
     }
     .projectTextContainer p {
         margin-left: -5rem;
-        margin-right: 0;
+        margin-right: 3rem;
+        text-align: center;
     }
     li p {
         display: none;
     }
     .projectLinks {
         display: flex;
-        margin: 2rem;
         width: 50%;
+        margin: 2rem 3.5rem;
     }
 }
 
