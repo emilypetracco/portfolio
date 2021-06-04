@@ -53,29 +53,73 @@ h1 {
     color: #FFF;
     text-shadow: -1px -1px 1px #424247, 1px 1px 1px #424247;
     margin-bottom: 0px;
+    text-align: center;
 }
 
 h2 {
     font-size: 4.5rem;
-    z-index: 1;
+    text-align: center;
 }
 
-.hiddenH2 {
-    display: none;
+.wordCarousel div {
+    overflow: hidden;
+    display: inline-block;
+    position: relative;
+    height: 7.5rem;
+    padding-top: 10px;
+    margin-top: -7px;
 }
 
-.hiddenH2 span {
+.wordCarousel div li {
+    color: #424247;
+    padding: 0 10px;
+    height: 45px;
+    margin-bottom: 45px;
+}
+
+.flip4 {
+    padding-left: 0px;
+}
+
+li span {
     background-color: #e4f2c1;
 }
 
-.animation {
-    background-color: #e4f2c1;
-    height: 6%;
+.flip2 { animation: flip2 6s cubic-bezier(0.23, 1, 0.32, 1.2) infinite; }
+.flip3 { animation: flip3 8s cubic-bezier(0.23, 1, 0.32, 1.2) infinite; }
+.flip4 { animation: flip4 10s cubic-bezier(0.23, 1, 0.32, 1.2) infinite; }
+
+@keyframes flip2 {
+    0% { margin-top: -180px; }
+    5% { margin-top: -90px;  }
+    50% { margin-top: -90px; }
+    55% { margin-top: 0px; }
+    99.99% { margin-top: 0px; }
+    100% { margin-top: -270px; }
 }
 
-.animation::before {
-    content: '';
-    animation: animate infinite 10s;
+@keyframes flip3 {
+    0% { margin-top: -270px; }
+    5% { margin-top: -180px; }
+    33% { margin-top: -180px; }
+    38% { margin-top: -90px; }
+    66% { margin-top: -90px; }
+    71% { margin-top: 0px; }
+    99.99% { margin-top: 0px; }
+    100% { margin-top: -270px; }
+}
+
+@keyframes flip4 {
+    0% { margin-top: -360px; }
+    5% { margin-top: -270px; }
+    25% { margin-top: -270px; }
+    30% { margin-top: -180px; }
+    50% { margin-top: -180px; }
+    55% { margin-top: -90px; }
+    75% { margin-top: -90px; }
+    80% { margin-top: 0px; }
+    99.99% { margin-top: 0px; }
+    100% { margin-top: -270px; }
 }
 
 .scallopBottom {
@@ -98,26 +142,6 @@ h2 {
     background-repeat: repeat-x;
 }
 
-@keyframes animate {
-    0% {
-        content: 'front-end web developer';
-    }
-    20% {
-        content: 'front-end web developer';
-    }
-    40% {
-        content: 'floral designer';
-    }
-    60% {
-        content: 'cake enthusiast';
-    }
-    80% {
-        content: '2000s pop-culture junkie';
-    }
-    100% {
-        content: 'life-long Spice Girls fan';
-    }
-}
 
 .chevron {
     display: flex;
@@ -338,12 +362,6 @@ footer {
     h1 {
         font-size: 8rem;
     }
-    h2 {
-        display: none;
-    }
-    .hiddenH2 {
-        display: inline;
-    }
     .aboutTextContent {
         margin-top: 7rem;
     }
@@ -450,6 +468,9 @@ footer {
 }
 
 @media (max-width: 640px) {
+    h2 {
+        font-size: 2.5rem;
+    }
     .skillIcons {
         font-size: 4rem;
     }
@@ -463,7 +484,10 @@ footer {
         font-size: 6rem;
     }
     h2 {
-        font-size: 2.5rem;
+        font-size: 2rem;
+    }
+    .fa-chevron-down {
+        bottom: 3rem;
     }
     .skillIcons {
         font-size: 3rem;
@@ -480,6 +504,9 @@ footer {
     }
     h1 {
         font-size: 5rem;
+    }
+    .wordCarousel di li {
+        padding: 0;
     }
     h4 {
         margin-left: -3rem;
@@ -498,21 +525,9 @@ footer {
     }
 }
 
-@media (max-width: 451px) {
-    .headerText {
-        top: 8rem;
-    }
-    h4 {
-        margin-left: -5rem;
-    }
-    .projectTextContainer p {
-        padding-right: 2px;
-    }
-}
-
 @media (max-width: 375px) {
     .headerText {
-        top: 14rem;
+        top: 20rem;
     }
     h1 {
         font-size: 4.5rem;
@@ -520,8 +535,16 @@ footer {
     h2 {
         font-size: 2rem;
     }
+    h3 {
+        font-size: 4rem;
+    }
+    h4 {
+        margin-left: -5rem;
+        font-size: 2.5rem;
+    }
     .projectTextContainer p {
         margin-right: 3rem;
+        padding-right: 2px;
     }
 }
 
